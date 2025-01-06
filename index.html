@@ -3,11 +3,11 @@
 <head>
   <title>dy17n.com</title>
   <meta charset="UTF-8" />
-<link rel="stylesheet" href="https://unpkg.com/98.css" />
+<link rel="stylesheet" href="https://unpkg.com/7.css" />
 </head>
 
 <body style="background-color: #000000">
-  <div class="window" style="margin: 32px">
+  <div class="window" style="">
     <div class="title-bar">
        <div class="title-bar-text">https://dy17n.com</div>	
        <div class="title-bar-controls">
@@ -16,25 +16,26 @@
          <button aria-label="Close"></button>
         </div>
     </div>
-    <div class="window-body">
-      <h4>dy17n:</h4>
-    </div>
-
-    <div class="window" style="width: auto; margin: 12px ">
-      <div class="title-bar">
-        <div class="title-bar-text">Links</div>
+    <div class="window-body" style="padding: 12px">
+      <div role=tooltip style="width: 30%">
+	      <p>Producer & Engineer Out Of Chicago</p>
       </div>
-      <div class="window-body" style="display: flex; justify-content: space-around">
-	<form action="https://soundcloud.com/dy17n">
-          <button type="submit">SoundCloud</button>
-	</form>
-	<form action="https://www.instagram.com/dy17.n/">
-          <button type="submit">Instagram</button>
-	</form>
-	<button disabled> Coming Soon</button>
-      </div>
+      <p></p>
     </div>
   </div>
 
+  <div class="window" style="width: 50%; left: 40%; position: absolute; top: 7%; ">
+    <div class="title-bar">
+    <div class="title-bar-text">Links</div>
+    </div>
+    <div class="window-body" style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 2%; row-gap: 5px">
+      <form action="https://soundcloud.com/dy17n">
+        <button type="submit">SoundCloud</button>
+      </form>
+      <form action="https://www.instagram.com/dy17.n/">
+        <button type="submit">Instagram</button>
+      </form>
+      <button disabled> Coming Soon </button>
+     </div>
 </body>
 </html>
