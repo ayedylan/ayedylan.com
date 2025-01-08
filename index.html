@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="./style.css"/>
 </head>
 
-<body style="font-size:200px">
+<body>
   <div class="window" style="width: 75%; margin: auto;">
     <div class="title-bar">
        <div class="title-bar-text"></div>	
@@ -15,19 +15,29 @@
          <button aria-label="Minimize"></button>
          <button aria-label="Restore"></button>
          <button aria-label="Close"></button>
-        </div>
+       </div>
     </div>
-    <div class="window-body" style="padding: 12px">
-      <h4 style="margin: 0; margin-bottom: 10px"> dy17n: </h4>
-      <div role=tooltip style="width: 30%; font-size: 1.3em; margin-bottom: 2vh;">Producer & Engineer Out Of Chicago</div>
-      <h4>Projects</h4>
-      <p> This ho </p>
-      <h4>Placements</h4>
-      <p>WIP, Coming soon.</p>
-     </div>
-     <div class="status-bar">
-       <p class="status-bar-field">Programmed With Love</p>
-       <p class="status-bar-field">CPU Usage: 14%</p>
+    <div class="window-body" >    
+       <ul role="menubar">
+        <li role="menuitem" tabindex="0">File</li>
+        <li role="menuitem" tabindex="0">Edit</li>
+        <li role="menuitem" tabindex="0">View</li>
+        <li role="menuitem" tabindex="0">Help</li>
+      </ul>
+      <div style="padding: 12px">
+        <h4 style="margin: 0; margin-bottom: 10px"> dy17n: </h4>
+        <div role=tooltip style="width: 30%; font-size: 1.3em; margin-bottom: 2vh;">Producer & Engineer Out Of Chicago</div>
+        <h4>Projects</h4>
+        <p> This ho.</p>
+        <h4>Placements</h4>
+        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+	  <div style="width: 80%"></div> 
+        </div>
+      </div>
+    </div>
+    <div class="status-bar">
+      <p class="status-bar-field">Programmed With Love</p>
+      <p class="status-bar-field">CPU Usage: 14%</p>
     </div>
   </div>
 
