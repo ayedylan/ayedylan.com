@@ -3,63 +3,52 @@
 <head>
 <title>dy17n.com</title>
 <meta charset="UTF-8" />
-<link rel="stylesheet" href="https://unpkg.com/7.css" />
-<link rel="stylesheet" href="./style.css"/>
+<script src="https://cdn.jsdelivr.net/npm/tuicss@2.1.2/dist/tuicss.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/tuicss@2.1.2/dist/tuicss.min.css" rel="stylesheet">
+<style>
+  .tui-window, .tui-panel {
+      margin-bottom: 20px;
+      max-width: 75%;
+      text-align: left;
+    }
+
+  .info-text {
+    margin-bottom: 10px;
+    color: white;
+  }
+</style>
 </head>
-
-<body>
-  <div class="window glass" id="window" style="width: 75%; margin: auto" onclick="classList.add('active')">
-    <div class="title-bar">
-       <div class="title-bar-text"></div>	
-       <div class="title-bar-controls">
-	 <a href="#no-escape">
-           <button aria-label="Minimize"></button>
-	 </a>
-         <button aria-label="Restore"></button>
-	 <a href="#no-escape">
-           <button aria-label="Close"></button>
-	 </a>
-       </div>
-    </div>
-    <div class="window-body" >    
-       <ul role="menubar">
-        <li role="menuitem" tabindex="0">File</li>
-        <li role="menuitem" tabindex="0">Edit</li>
-        <li role="menuitem" tabindex="0">View</li>
-        <li role="menuitem" tabindex="0">Help</li>
-      </ul>
-      <div style="padding: 20px; padding-left: 75px">
-        <h4 style="margin: 0; margin-bottom: 10px"> dy17n: </h4>
-        <p>Producer & Engineer Out Of Chicago</p>
-        <h4>Projects</h4>
-        <p> This ho.</p>
-        <h4>Placements</h4>
-	<p> Coming Soon!</p>
-        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" style="width: 60%">
-	  <div style="width: 80%"></div> 
-	</div>
+<body class="tui-bg-purple-white center" style="margin-top: 100px; margin-bottom 100px">
+  <div class="tui-window">
+    <fieldset class="tui-fieldset tui-border-double">
+      <legend>dy17n.com</legend>
+      <h1>ABOUT ME:</h1>
+      <p>I am a producer and engineer hailing from Chicago. I use Ableton Live as my DAW of choice. Contact me @ dy17n on discord for inquries.</p>
+      <div class="tui-divider"></div>
+      <div class="center">
+        <h1>LINKS</h1>	      
+        <a href="https://soundcloud.com/dy17n">
+          <button class="tui-button">Soundcloud</button>
+        </a>
+        <a href="https://instagram.com/dy17.n">
+	  <button class="tui-button">Instagram</button>
+        </a>
+        <a href="https://github.com/dy17n">
+	  <button class="tui-button">GitHub</button>
+        </a>
       </div>
+    </fieldset>
+  </div>
+  <div class="info-text"> </div>
+  <div class="tui-panel cyan-168">
+    <div class="tui-panel-header black-text">
+       My Projects 
     </div>
-    <div class="status-bar">
-      <p class="status-bar-field">Programmed With Love</p>
-      <p class="status-bar-field">CPU Usage: 14%</p>
+    <div class="tui-panel-content">
+       WIP... Includes this... 
     </div>
   </div>
-
-  <div class="window active is-bright" id="no-escape" role="dialog" aria-labelledby="dialog-title">
-    <div class="title-bar">
-      <div class="title-bar-text" id="dialog-title"></div>
-      <div class="title-bar-controls">
-        <button aria-label="Close" onclick="history.back()"></button>
-      </div>
-    </div>
-    <div class="window-body has-space">
-      <h2 class="instruction instruction-primary">Don't try to leave</h2>
-    </div>
-    <footer style="text-align: right">
-      <button onclick="history.back()">Come Back</button>
-    </footer>
-  </div>
+  
 
 </body>
 </html>
