@@ -1,53 +1,41 @@
 <!DOCTYPE html>
 <html> 
 <head>
-<title>dy17n.com</title>
-<meta charset="UTF-8" />
-<script src="https://cdn.jsdelivr.net/npm/tuicss@2.1.2/dist/tuicss.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/tuicss@2.1.2/dist/tuicss.min.css" rel="stylesheet">
-<style>
-  .tui-window, .tui-panel {
-      margin-bottom: 20px;
-      max-width: 75%;
-      text-align: left;
-    }
-
-  .info-text {
-    margin-bottom: 10px;
-  }
-</style>
+	<title>ayedylan.com</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="https://unpkg.com/7.css">
+<!	<link rel="stylesheet"  href="style.css">
 </head>
-<body class="tui-bg-purple-white center" style="margin-top: 100px; margin-bottom 100px">
-  <div class="tui-window">
-    <fieldset class="tui-fieldset tui-border-double">
-      <legend>dy17n.com</legend>
-      <h1>ABOUT ME:</h1>
-      <p>I am a producer and engineer hailing from Chicago. I use Ableton Live as my DAW of choice. Contact me @ dy17n on discord for inquries.</p>
-      <div class="tui-divider"></div>
-      <div class="center">
-        <h1>LINKS</h1>	      
-        <a href="https://soundcloud.com/dy17n">
-          <button class="tui-button">Soundcloud</button>
-        </a>
-        <a href="https://instagram.com/dy17.n">
-	  <button class="tui-button">Instagram</button>
-        </a>
-        <a href="https://github.com/dy17n">
-	  <button class="tui-button">GitHub</button>
-        </a>
-      </div>
-    </fieldset>
-  </div>
-  <div class="info-text"> Even More</div>
-  <div class="tui-panel cyan-168">
-    <div class="tui-panel-header black-text">
-       My Projects 
-    </div>
-    <div class="tui-panel-content">
-       WIP... Includes this... 
-    </div>
-  </div>
-  
-
+<body style="background-image: url(assets/background.jog);">
+<div class="window active">
+	<div class="title-bar">
+		<div class="title-bar-text"> index.html </div>
+		<div class="title-bar-controls">
+			<button aria-label="Minimize"></button>
+			<button aria-label="Maximize"></button>
+			<button aria-label="Close"></button>
+		</div>
+        </div>
+	<div class="window-body has-space">
+		<section class="tabs">
+			<h3 style="text-align: center"> ayedylan </h3>
+			<menu role="tablist" aria-label="Tabs">
+				<button role="tab" aria-selected="true" aria-controls="about"> About Me </button>
+			</menu>
+			<article role="tabpanel" id="about">
+				<p> I am:</p>
+				<ul>
+					<li> From Chicago, IL </li>
+					<li> a Computer Engineering Student </li>
+				</ul>
+			</article>
+			<article role="tabpanel" hidden id="placements">
+				<h3> Coming Soon </h3>
+			</article>
+		</section>
+		<img src="assets/gentoo-badge3.svg"> 
+	</div>
+</div>
 </body>
 </html>
+
